@@ -3,7 +3,8 @@ online store &amp; forums website
 
 This project was developed through a business case study, the site has the following features:
 *online shopping
-*forum*photo gallery
+*forum
+*photo gallery
 *fully responsive
 
 It is coded with PHP, MySQL, HTML, CSS and JavaScript. Please run your local server using MAMP or XAMPP.
