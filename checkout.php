@@ -62,7 +62,7 @@ if (mysqli_num_rows($get_cart_res) < 1) {
         $display_block .= <<<END_OF_TEXT
           <tr>
           <td>$item_title <br></td>
-          <td><img src="/retro_store/images/$item_image" alt="$item_title" class='img_cart'/> <br></td>
+          <td><img src="/retro_project/images/$item_image" alt="$item_title" class='img_cart'/> <br></td>
           <td>$item_qty <br></td>
           <td>\$$total_price</td>
           <td><a href="removestock.php?id=$st_id"><i class="fa fa-times" aria-hidden="true"></i></a></td>
