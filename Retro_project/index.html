@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Retro Records</title>
+    <style>
+
+    img {
+      vertical-align: middle;
+      width: 100%;
+    }
+        /* Slideshow container */
+    .slideshow-container {
+      width: auto;
+      position: relative;
+      margin: auto;
+      background-color:white;
+    }
+    
+    /* Next & previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      background-color:transparent;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: #FDD935;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div>
+            <a href="index.html" class="logo">
+                <img src="images/RetroRecords_logo.png" alt="logo">
+            </a>
+        </div>
+        <a href="#" class="toggle-button">
+            <i class="fa fa-bars"></i>
+
+        </a>
+        <div class="navbar-menu">
+            <ul>
+                <li class="indicator"><a href="index.html">Home</a></li>
+                <li><a href="retroRecords.html">Retro Records</a></li>
+                <li><a href="forum.php">Forums</a></li>
+                <li><a href="seestore.php">Shop</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="showcart.php"><i class="fa fa-shopping-bag"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- <div class="banner">
+        <h1>Vinyl Sounds Much Better</h1>
+        <h1 id="sub">RetroRecords is Sydney's Leading Impoter of Vinyl</h1>
+    </div> -->
+    <div class="slideshow-container">
+
+        <div class="mySlides">
+            <a href="index.html"><img src="images/slide_one.jpg" alt="img1"></a>
+          </div>
+
+        <div class="mySlides">
+            <a href="seestore.php"><img src="images/slide_two.jpg" alt="img2"></a>
+        </div>
+    
+        <div class="mySlides">
+            <a href="forum.php"><img src="images/slide_three.jpg" alt="img3"></a>
+        </div>
+    
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+    
+      </div>
+
+    <main>
+        <div class="info">
+            <h2>Welcome to Retro Records Newtown</h2>
+            <p>RetroRecords Newtown is a one-stop-shop for your retro music purchases.
+                We source retro albums, rare LPs and used records for you, the music consumer and audiophile.
+            </p>
+        </div>
+        <div class="info">
+            <h2>Featured Products</h2>
+            <a href="RetroRecords.html"><img src="images/Radiohead.jpg" alt="radiohead_album_image"></a>
+            <a href="RetroRecords.html"><img src="images/PEARL_JAM.jpg" alt="ear_Jam_album_image"></a>
+            <a href="RetroRecords.html"><img src="images/abba.jpg" alt="abba_album_image"></a>
+            <a href="RetroRecords.html"><img src="images/taylor_swift.jpg" alt="taylor_swift_album_image"></a>
+        </div>
+
+        <div class="info_1">
+            <div class="one">
+                <h2>Vinyl records sound better <i class="fa fa-play-circle"></i></h2>
+                <p>It's pure nostalgia. The audio on vinyl records cannot be compressed as much as modern digital audio. It means that the audio from vinyl records is more precise and more natural. 
+                </p>
+            </div>
+            <div class="two">
+                <h2>Find us <i class="fa fa-home"></i></h2>
+            <p>We are located at the top of King Street, just near the Marly Hotel. <br>Phone us on: <strong>02 9519 1234</strong>.
+            </p>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer_info">
+            <ul>
+                <li>All Rights Reserved</li>
+                <li>&copy; Retro Records Newtown Pty Limited 2022</li>
+                <li><a href="faq.html" style="text-decoration: none; font-weight: bold; color: black;">FAQ</a></li>
+                <li>Privacy Policy</li>
+            </ul>
+        </div>
+        <div class="footer_info_mobile">
+            <ul>
+                <li><a href="faq.html" style="text-decoration: none; font-weight: bold; color: black;">FAQ</a></li>
+                <li>Privacy Policy </li>
+                <li>&copy; Retro Records Newtown</li>
+            </ul>
+        </div>
+        <div class="footer_social">
+            <ul>
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+<script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+    
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+    
+        function currentSlide(n) {
+          showSlides(slideIndex === n);
+        }
+    
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          if (n > slides.length) {
+            slideIndex = 1
+          }
+          if (n < 1) {
+            slideIndex = slides.length
+          }
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          if (slideIndex > slides.length) {slideIndex = 1} 
+          slides[slideIndex - 1].style.display = "block";
+        }
+      </script>
+</body>
+</html>
